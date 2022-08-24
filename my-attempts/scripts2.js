@@ -28,6 +28,10 @@ Wrong Number Comparison
 Winner Message
     - You win! The number was INSERT and it took you INSERT time(s) to guess the right number. Your guesses were INSERT. Play again?
 */
+
+//this is literally a shit show i am so sorry
+
+
 let userNumTries = userGuess.length;
 let userAttempts = userGuess.map(function (n) { return n; });
 let randomNum = Math.floor(Math.random() * userRange) + 1;
