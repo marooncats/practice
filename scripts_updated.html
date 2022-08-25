@@ -4,17 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width", initial-scale=1, shrink-to-fit="no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <title>Dice Roller Game</title>
+    <title>Higher Lower, The # Guessing Game</title>
 </head>
 
 <body>
 	<body>
-		<p>Dice Roll</p>
+		<!-- added span with id maxNum -->
+		<form name="inputForm" action="javascript:void(0);" onsubmit="check()">
+			Enter a guess between 1 and <span id="maxNum"></span>:
+			<input type="number" name="guess" />
 
+			<input type="submit" value="Check" />
+		</form>
+		<div id="message"></div>
 </body>
 
 <footer>
-    <script src="dice-roll.js"></script>
+    <script src="scripts_updated.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
