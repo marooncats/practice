@@ -26,9 +26,6 @@ function do_guess() {
         message.innerHTML = "No, try a lower number.";
         guesses.push(guess);
 
-    } else if (guesses.find((e) => e === num)) {
-        message.innerHTML = "You already used this number. Try again.";
-
     } else {
         guesses.push(guess);
         message.innerHTML = "You got it!";
