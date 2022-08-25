@@ -16,7 +16,7 @@ function do_guess() {
         message.innerHTML = "That number is not in range, try again.";
 
     } else if (guesses.find((e) => e === num)) {
-        document.getElementById('message').innerHTML = "You already used this number. Try again.";
+        message.innerHTML = "You already used this number. Try again.";
 
     } else if (guess < num) {
         message.innerHTML = "No, try a higher number.";
